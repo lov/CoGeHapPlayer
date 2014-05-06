@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3098ECD3180931D80099A974 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3098ECD2180931D80099A974 /* Quartz.framework */; };
+		3098ECD5180931D80099A974 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3098ECD4180931D80099A974 /* Cocoa.framework */; };
+		3098ECDF180931D80099A974 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3098ECDD180931D80099A974 /* InfoPlist.strings */; };
+		3098ECE2180931D80099A974 /* CoGeHapPlayerPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3098ECE1180931D80099A974 /* CoGeHapPlayerPlugIn.m */; };
+		3098ECEB180932990099A974 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3098ECE9180932990099A974 /* QTKit.framework */; };
+		3098ECEC180932990099A974 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3098ECEA180932990099A974 /* QuickTime.framework */; };
+		3098ECF0180933AB0099A974 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3098ECEF180933AB0099A974 /* OpenGL.framework */; };
+		3098ED13180934960099A974 /* HapPixelBufferTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3098ED0A180934960099A974 /* HapPixelBufferTexture.m */; };
+		3098ED14180934960099A974 /* HapSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3098ED0C180934960099A974 /* HapSupport.m */; };
+		3098ED16180934960099A974 /* ScaledCoCgYToRGBA.frag in Sources */ = {isa = PBXBuildFile; fileRef = 3098ED0F180934960099A974 /* ScaledCoCgYToRGBA.frag */; };
+		3098ED17180934960099A974 /* ScaledCoCgYToRGBA.vert in Sources */ = {isa = PBXBuildFile; fileRef = 3098ED10180934960099A974 /* ScaledCoCgYToRGBA.vert */; };
+		3098ED19180934D00099A974 /* ScaledCoCgYToRGBA.frag in Resources */ = {isa = PBXBuildFile; fileRef = 3098ED0F180934960099A974 /* ScaledCoCgYToRGBA.frag */; };
+		3098ED1A180934D00099A974 /* ScaledCoCgYToRGBA.vert in Resources */ = {isa = PBXBuildFile; fileRef = 3098ED10180934960099A974 /* ScaledCoCgYToRGBA.vert */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3098ECCF180931D80099A974 /* CoGeHapPlayer.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoGeHapPlayer.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		3098ECD2180931D80099A974 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		3098ECD4180931D80099A974 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3098ECD7180931D80099A974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3098ECD8180931D80099A974 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3098ECD9180931D80099A974 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3098ECDC180931D80099A974 /* CoGeHapPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoGeHapPlayer-Info.plist"; sourceTree = "<group>"; };
+		3098ECDE180931D80099A974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3098ECE0180931D80099A974 /* CoGeHapPlayerPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoGeHapPlayerPlugIn.h; sourceTree = "<group>"; };
+		3098ECE1180931D80099A974 /* CoGeHapPlayerPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoGeHapPlayerPlugIn.m; sourceTree = "<group>"; };
+		3098ECE3180931D80099A974 /* CoGeHapPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoGeHapPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		3098ECE9180932990099A974 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = ../../../../../../System/Library/Frameworks/QTKit.framework; sourceTree = "<group>"; };
+		3098ECEA180932990099A974 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = ../../../../../../System/Library/Frameworks/QuickTime.framework; sourceTree = "<group>"; };
+		3098ECEF180933AB0099A974 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		3098ED09180934960099A974 /* HapPixelBufferTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HapPixelBufferTexture.h; sourceTree = "<group>"; };
+		3098ED0A180934960099A974 /* HapPixelBufferTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HapPixelBufferTexture.m; sourceTree = "<group>"; };
+		3098ED0B180934960099A974 /* HapSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HapSupport.h; sourceTree = "<group>"; };
+		3098ED0C180934960099A974 /* HapSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HapSupport.m; sourceTree = "<group>"; };
+		3098ED0F180934960099A974 /* ScaledCoCgYToRGBA.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ScaledCoCgYToRGBA.frag; sourceTree = "<group>"; };
+		3098ED10180934960099A974 /* ScaledCoCgYToRGBA.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ScaledCoCgYToRGBA.vert; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3098ECCB180931D80099A974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3098ECD5180931D80099A974 /* Cocoa.framework in Frameworks */,
+				3098ECD3180931D80099A974 /* Quartz.framework in Frameworks */,
+				3098ECEB180932990099A974 /* QTKit.framework in Frameworks */,
+				3098ECF0180933AB0099A974 /* OpenGL.framework in Frameworks */,
+				3098ECEC180932990099A974 /* QuickTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3098ECC5180931D80099A974 = {
+			isa = PBXGroup;
+			children = (
+				3098ECDA180931D80099A974 /* CoGeHapPlayer */,
+				3098ECD1180931D80099A974 /* Frameworks */,
+				3098ECD0180931D80099A974 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3098ECD0180931D80099A974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3098ECCF180931D80099A974 /* CoGeHapPlayer.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3098ECD1180931D80099A974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3098ECEF180933AB0099A974 /* OpenGL.framework */,
+				3098ECE9180932990099A974 /* QTKit.framework */,
+				3098ECEA180932990099A974 /* QuickTime.framework */,
+				3098ECD2180931D80099A974 /* Quartz.framework */,
+				3098ECD4180931D80099A974 /* Cocoa.framework */,
+				3098ECD6180931D80099A974 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3098ECD6180931D80099A974 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3098ECD7180931D80099A974 /* Foundation.framework */,
+				3098ECD8180931D80099A974 /* CoreData.framework */,
+				3098ECD9180931D80099A974 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3098ECDA180931D80099A974 /* CoGeHapPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3098ED07180934960099A974 /* HAP */,
+				3098ECE0180931D80099A974 /* CoGeHapPlayerPlugIn.h */,
+				3098ECE1180931D80099A974 /* CoGeHapPlayerPlugIn.m */,
+				3098ECDB180931D80099A974 /* Supporting Files */,
+			);
+			path = CoGeHapPlayer;
+			sourceTree = "<group>";
+		};
+		3098ECDB180931D80099A974 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3098ECDC180931D80099A974 /* CoGeHapPlayer-Info.plist */,
+				3098ECDD180931D80099A974 /* InfoPlist.strings */,
+				3098ECE3180931D80099A974 /* CoGeHapPlayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3098ED07180934960099A974 /* HAP */ = {
+			isa = PBXGroup;
+			children = (
+				3098ED09180934960099A974 /* HapPixelBufferTexture.h */,
+				3098ED0A180934960099A974 /* HapPixelBufferTexture.m */,
+				3098ED0B180934960099A974 /* HapSupport.h */,
+				3098ED0C180934960099A974 /* HapSupport.m */,
+				3098ED0F180934960099A974 /* ScaledCoCgYToRGBA.frag */,
+				3098ED10180934960099A974 /* ScaledCoCgYToRGBA.vert */,
+			);
+			path = HAP;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3098ECCE180931D80099A974 /* CoGeHapPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3098ECE6180931D80099A974 /* Build configuration list for PBXNativeTarget "CoGeHapPlayer" */;
+			buildPhases = (
+				3098ECCA180931D80099A974 /* Sources */,
+				3098ECCB180931D80099A974 /* Frameworks */,
+				3098ECCC180931D80099A974 /* Resources */,
+				3098ECCD180931D80099A974 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoGeHapPlayer;
+			productName = CoGeHapPlayer;
+			productReference = 3098ECCF180931D80099A974 /* CoGeHapPlayer.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3098ECC6180931D80099A974 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tamas Nagy";
+			};
+			buildConfigurationList = 3098ECC9180931D80099A974 /* Build configuration list for PBXProject "CoGeHapPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3098ECC5180931D80099A974;
+			productRefGroup = 3098ECD0180931D80099A974 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3098ECCE180931D80099A974 /* CoGeHapPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3098ECCC180931D80099A974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3098ECDF180931D80099A974 /* InfoPlist.strings in Resources */,
+				3098ED19180934D00099A974 /* ScaledCoCgYToRGBA.frag in Resources */,
+				3098ED1A180934D00099A974 /* ScaledCoCgYToRGBA.vert in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3098ECCD180931D80099A974 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies the built plug-in to \"~/Library/Graphics/Quartz Composer Plug-Ins\" and overrides any previous version at that location\n\nmkdir -p \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins\"\nrm -rf \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/CoGeHapPlayer.plugin\"\ncp -rf \"$BUILT_PRODUCTS_DIR/CoGeHapPlayer.plugin\" \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3098ECCA180931D80099A974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3098ED13180934960099A974 /* HapPixelBufferTexture.m in Sources */,
+				3098ECE2180931D80099A974 /* CoGeHapPlayerPlugIn.m in Sources */,
+				3098ED14180934960099A974 /* HapSupport.m in Sources */,
+				3098ED16180934960099A974 /* ScaledCoCgYToRGBA.frag in Sources */,
+				3098ED17180934960099A974 /* ScaledCoCgYToRGBA.vert in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3098ECDD180931D80099A974 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3098ECDE180931D80099A974 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3098ECE4180931D80099A974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		3098ECE5180931D80099A974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		3098ECE7180931D80099A974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoGeHapPlayer/CoGeHapPlayer-Prefix.pch";
+				INFOPLIST_FILE = "CoGeHapPlayer/CoGeHapPlayer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		3098ECE8180931D80099A974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoGeHapPlayer/CoGeHapPlayer-Prefix.pch";
+				INFOPLIST_FILE = "CoGeHapPlayer/CoGeHapPlayer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3098ECC9180931D80099A974 /* Build configuration list for PBXProject "CoGeHapPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3098ECE4180931D80099A974 /* Debug */,
+				3098ECE5180931D80099A974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3098ECE6180931D80099A974 /* Build configuration list for PBXNativeTarget "CoGeHapPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3098ECE7180931D80099A974 /* Debug */,
+				3098ECE8180931D80099A974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3098ECC6180931D80099A974 /* Project object */;
+}
